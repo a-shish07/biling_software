@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap");
+.review .secContainer .textDiv .redText {
+  font-size: 29px;
+  display: block;
+  color: rgb(232, 156, 16);
+  font-weight: 700;
+}
+.review .secContainer .textDiv h1 {
+  font-size: 4vh;
+  color: black;
+  padding: 1rem 0;
+}
+.review .secContainer .textDiv p {
+  color: black;
+}
+.review .secContainer .textDiv .stars {
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.review .secContainer .textDiv .stars .icon {
+  color: rgb(246, 5, 5);
+  font-size: 4vh;
+}
+.review .secContainer .textDiv .clientsImages {
+  gap: 2rem;
+}
+.review .secContainer .textDiv .clientsImages img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 0 2px 2px rgb(218, 112, 112);
+}
+.review .secContainer .imgDiv {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.review .secContainer .imgDiv img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .review .secContainer .textDiv .redText {
+    font-size: 2.5vh;
+  }
+  .review .secContainer .textDiv h1 {
+    font-size: 20px;
+    color: #000;
+  }
+  .review .secContainer .textDiv p {
+    color: black;
+    font-size: 2.5vh;
+  }
+  .review .secContainer .textDiv .stars .icon {
+    font-size: 3vh;
+  }
+  .review .secContainer .textDiv .clientsImages img {
+    height: 50px;
+    width: 50px;
+  }
+  .review .secContainer .imgDiv {
+    height: 250px;
+    width: 100%;
+  }
+  .review .secContainer .imgDiv img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 740px) {
+  .review .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .review .secContainer .textDiv .redText {
+    font-size: 2.5vh;
+  }
+  .review .secContainer .textDiv h1 {
+    font-size: 20px;
+    color: #000;
+  }
+  .review .secContainer .textDiv p {
+    color: #000;
+    font-size: 2.5vh;
+  }
+  .review .secContainer .textDiv .stars .icon {
+    font-size: 3vh;
+  }
+  .review .secContainer .textDiv .clientsImages img {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .review .secContainer {
+    gap: 3rem;
+  }
+  .review .secContainer .textDiv .redText {
+    font-size: 2vh;
+  }
+  .review .secContainer .textDiv h1 {
+    font-size: 3vh;
+    color: #000;
+  }
+  .review .secContainer .textDiv p {
+    color: #000;
+    font-size: 2.5vh;
+    line-height: 2rem;
+  }
+  .review .secContainer .imgDiv {
+    height: 300px;
+  }
+}/*# sourceMappingURL=Review.css.map */

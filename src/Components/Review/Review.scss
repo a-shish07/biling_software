@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+
+.review{
+    .secContainer{
+        .textDiv{
+            .redText{
+                font-size: 29px;
+                display: block;
+                color: rgb(232, 156, 16);
+                font-weight: 700;
+            }
+            h1{
+                font-size: 4vh;
+                color: black;
+                padding: 1rem 0;
+            }
+            p{
+                color:black ;
+            }
+            .stars{
+                gap: 1rem;
+                padding: 1rem 0;
+                .icon{
+                    color: rgb(246, 5, 5);
+                    font-size: 4vh;
+                }
+            }
+            .clientsImages{
+                gap: 2rem;
+                img{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid white;
+                    box-shadow: 0 0 2px 2px rgb(218, 112, 112);
+                }
+            }
+        }
+        .imgDiv{
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// Media queries
+@media screen and (min-width: 480px){
+    .review{
+        .secContainer{
+            .textDiv{
+                .redText{
+                    font-size: 2.5vh;
+                }
+                h1{
+                    font-size: 20px;
+                    color: #000;
+                }
+                p{
+                    color: black;
+                    font-size: 2.5vh;
+                }
+                .stars{
+                    .icon{
+                        font-size: 3vh;
+                    }
+                }
+                .clientsImages{
+                    img{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+            .imgDiv{
+                height: 250px;
+                width: 100%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 740px){
+    .review{
+        .secContainer{
+            grid-template-columns:repeat(2,1fr);
+
+            .textDiv{
+                .redText{
+                    font-size: 2.5vh;
+                }
+                h1{
+                    font-size: 20px;
+                    color: #000;
+                }
+                p{
+                    color: #000;
+                    font-size: 2.5vh;
+                }
+
+                .stars{
+                    .icon{
+                        font-size: 3vh;
+                    }
+                }
+                .clientsImages{
+                    img{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .review{
+        .secContainer{
+            gap: 3rem;
+
+            .textDiv{
+                .redText{
+                    font-size: 2vh;
+                }
+                h1{
+                    font-size: 3vh;
+                    color: #000;
+                }
+                p{
+                    color: #000;
+                    font-size: 2.5vh;
+                    line-height: 2rem;
+                }
+            }
+            .imgDiv{
+                height: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.Home{
+    position: relative;
+    height: 95vh;
+    width: 100vw;
+    top:0;
+
+    .videoBg{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #f7f1f1;
+
+        video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .sectionText{
+        position: absolute;
+        height: 100%;
+        top: 30%;
+        bottom: 50%;
+        color: rgb(98, 46, 46);
+        padding: 0 1.3rem;
+
+
+        h1{
+            font-size: 8vh;
+            font-weight: 900;
+        }
+        p{
+            padding: 1rem 0;
+            font-size:3vh;
+            font-weight: 500;
+        }
+        .btn{
+            gap:.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-size: 3vh;
+            outline: none;
+            height: 50px;
+            width: 200px;
+            background: red;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+
+    .popularPlaces{
+        display: none;
+        
+    }
+}
+
+//Media queries
+@media screen and (min-width: 480px){
+    .Home{
+        .sectionText{
+            padding: 0 2rem;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            h1{
+                font-size: 4vh;
+                font-weight: 900;
+            }
+
+            p{
+                padding: 1rem 0;
+                font-size: 3vh;
+                max-width: 70%;
+                margin: auto;
+            }
+            .btn{
+                font-size: 2.5vh;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px){
+    .Home{
+    //     position: relative;
+    // height: 95vh;
+    width: 100vh;
+    // top:0;
+        .sectionText{
+            width: 100%;
+
+            h1{
+                font-size: 4rem;
+                font-weight: 900;
+                max-width: 70%;
+                margin: auto;
+            }
+            p{
+                padding: 1rem 0;
+                font-size: 3vh;
+                max-width: 70%;
+                margin: auto;
+            }
+            .btn{
+                gap: 0.5rem;
+                padding-right: 2rem;
+                padding-left: 2rem;
+                font-size: 3vh;
+                margin: auto;
+                width: 280px;
+                height: 65px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1040px){
+    .Home{
+        width: 100vw;
+        position: relative;
+
+        .sectionText{
+
+            h1{
+                font-size: 4.5rem;
+                font-weight: 900;
+                max-width: 70%;
+                margin: auto;
+                color: aliceblue;
+            }
+            p{
+                color: aliceblue;   
+            }
+        }
+
+        .popularPlaces{
+            display: block;
+            position: absolute;
+            bottom:8%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .content{
+                h3{
+                    color: white;
+                    padding: 1rem 0;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        width: 83%;
+                        height: 2px;
+                        background: rgb(202, 202, 202);
+                        right: 0;
+                        bottom: 50%;
+                        position: absolute;
+                    }
+                }
+
+                .images{
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+
+                    img{
+                        height: 100px;
+                        width: 210px;
+                        object-fit: cover;
+                        border-image-repeat: 10px;
+                    }
+                }
+            }
+             
+        }
+    }
+}
+

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap");
+.btn1 {
+  width: 100%;
+  border-radius: 120px;
+}
+
+.accordionContainer .title {
+  font-size: 20px;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  background: rgb(223, 122, 122);
+}
+.accordionContainer .title span {
+  cursor: pointer;
+}
+.accordionContainer .title span .icon {
+  font-size: 1.3rem;
+  color: black;
+}
+.accordionContainer .description {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  white-space: pre-line;
+  height: 5px;
+  transition: all 0.1s ease-in-out;
+  opacity: 0;
+  padding: 0 1rem;
+  background: rgb(207, 192, 192);
+  border-radius: 0 0 10px 10px;
+  color: black;
+}
+.accordionContainer .show {
+  height: 100px;
+  opacity: 1;
+}
+.accordionContainer .activeTitle {
+  background: rgb(223, 122, 122);
+  border-radius: 10px 10px 0 0;
+}
+
+.questions .secHeading h2, .questions .secHeading h3 {
+  padding-bottom: 1.5rem;
+}
+.questions .secHeading p {
+  font-size: 15px;
+  color: black;
+  padding-bottom: 1rem;
+}
+.questions .form .formContent {
+  gap: 1rem;
+}
+.questions .form .formContent input, .questions .form .formContent textarea {
+  background-color: pink;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+.questions .form .formContent input::-moz-placeholder, .questions .form .formContent textarea::-moz-placeholder {
+  font-size: 15px;
+  color: black;
+}
+.questions .form .formContent input::placeholder, .questions .form .formContent textarea::placeholder {
+  font-size: 15px;
+  color: black;
+}
+.questions .form .formContent textarea {
+  height: 100px;
+  border-radius: 20px;
+}
+
+.pp {
+  height: 60px;
+  width: 100%;
+  background: yellow;
+}
+
+@media screen and (min-width: 640px) {
+  .accordionContainer .title {
+    font-size: 2vh;
+  }
+  .accordionContainer .title span .icon {
+    font-size: 1.5rem;
+  }
+  .accordionContainer .description {
+    font-size: 2vh;
+  }
+  .accordionContainer .show {
+    height: 150px;
+  }
+  .questions .secHeading h2,
+  .questions .secHeading h3 {
+    font-size: 3vh;
+  }
+  .questions .secHeading p {
+    font-size: 2vh;
+  }
+  .questions .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .questions .secContainer .form .formContent input, .questions .secContainer .form .formContent textarea {
+    font-size: 2, 5vh;
+  }
+  .questions .secContainer .form .formContent input::-moz-placeholder, .questions .secContainer .form .formContent textarea::-moz-placeholder {
+    font-size: 2.5vh;
+    color: #000;
+  }
+  .questions .secContainer .form .formContent input::placeholder, .questions .secContainer .form .formContent textarea::placeholder {
+    font-size: 2.5vh;
+    color: #000;
+  }
+  .questions .secContainer .form .formContent textarea {
+    height: 100px;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .accordionContainer .title {
+    font-size: 2.5vh;
+  }
+  .accordionContainer .title h2 .icon {
+    font-size: 1.5rem;
+  }
+  .accordionContainer .description {
+    font-size: 2vh;
+  }
+  .accordionContainer .show {
+    height: 100px;
+  }
+  .questions .secHeading h2, .questions .secHeading h3 {
+    font-size: 1.5rem;
+  }
+  .questions .secHeading p {
+    font-size: 2.5vh;
+  }
+  .questions .secContainer {
+    gap: 3rem;
+  }
+}/*# sourceMappingURL=Questions.css.map */

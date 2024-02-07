@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Home {
+  position: relative;
+  height: 95vh;
+  width: 100vw;
+  top: 0;
+}
+.Home .videoBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #f7f1f1;
+}
+.Home .videoBg video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Home .sectionText {
+  position: absolute;
+  height: 100%;
+  top: 30%;
+  bottom: 50%;
+  color: rgb(98, 46, 46);
+  padding: 0 1.3rem;
+}
+.Home .sectionText h1 {
+  font-size: 8vh;
+  font-weight: 900;
+}
+.Home .sectionText p {
+  padding: 1rem 0;
+  font-size: 3vh;
+  font-weight: 500;
+}
+.Home .sectionText .btn {
+  gap: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 3vh;
+  outline: none;
+  height: 50px;
+  width: 200px;
+  background: red;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.Home .popularPlaces {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .Home .sectionText {
+    padding: 0 2rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .Home .sectionText h1 {
+    font-size: 4vh;
+    font-weight: 900;
+  }
+  .Home .sectionText p {
+    padding: 1rem 0;
+    font-size: 3vh;
+    max-width: 70%;
+    margin: auto;
+  }
+  .Home .sectionText .btn {
+    font-size: 2.5vh;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .Home {
+    width: 100vh;
+  }
+  .Home .sectionText {
+    width: 100%;
+  }
+  .Home .sectionText h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    max-width: 70%;
+    margin: auto;
+  }
+  .Home .sectionText p {
+    padding: 1rem 0;
+    font-size: 3vh;
+    max-width: 70%;
+    margin: auto;
+  }
+  .Home .sectionText .btn {
+    gap: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 3vh;
+    margin: auto;
+    width: 280px;
+    height: 65px;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .Home {
+    width: 100vw;
+    position: relative;
+  }
+  .Home .sectionText h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    max-width: 70%;
+    margin: auto;
+    color: aliceblue;
+  }
+  .Home .sectionText p {
+    color: aliceblue;
+  }
+  .Home .popularPlaces {
+    display: block;
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Home .popularPlaces .content h3 {
+    color: white;
+    padding: 1rem 0;
+    position: relative;
+  }
+  .Home .popularPlaces .content h3::after {
+    content: "";
+    width: 83%;
+    height: 2px;
+    background: rgb(202, 202, 202);
+    right: 0;
+    bottom: 50%;
+    position: absolute;
+  }
+  .Home .popularPlaces .content .images {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .Home .popularPlaces .content .images img {
+    height: 100px;
+    width: 210px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-image-repeat: 10px;
+  }
+}/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+// All Project colors
+root{
+    --primaryColor:hsl(14,90%,53%);
+}
+
+body{
+    background: var(--bgColor);
+}
+
+// Default Styling
+.flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    display:grid;
+    align-items: center;
+    gap: 1.5rem;
+}
+p{
+    font-size:20px;
+}
+html{
+    font-size: 90%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style:none;
+}
+.icon{
+    font-size: var(--h2FontSize);
+    cursor: pointer;
+}
+img , video{
+    height: auto;
+    width: 100%;
+}
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: var(--borderRadius);
+    padding:0.8rem 1rem;
+    color: var(--whiteColor);
+    background:var(--primaryColor);
+
+&:hover{
+    transition: .3s ease;
+    }
+}
+
+.secTitle{
+    display: grid;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--blackColor);
+    flex-direction: column;
+    gap: 1rem ;
+
+p{
+    color:var(--blackColor);
+    font-size: var(--normalFontSize);
+    font-weight: 400;
+    }
+    h3{
+        font-size: 4vh;
+    }
+}
+
+.secHeading{
+    padding-bottom: 1.5rem;
+}
+
+.btn .icon{
+    margin-left: 0.5rem;
+}
+.btn:hover{
+    color: var(--primaryColor);
+    background:var(--primaryColorLight);
+}
+.section{
+    padding: 4rem 0 2rem;
+}
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+::selection{
+    background: var(--primaryColorLight);
+    color: var(--primaryColor);
+}
+::-webkit-scrollbar{
+    width:10px;
+    background: var(--primaryColorLight);
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background: var(--primaryColor);
+    border-radius: var(--borderRadius);
+}
+
+// All this styling will take effect/apply in the later stage
+//Media queries
+@media screen and (min-width: 840px){
+   .section{
+    padding: 4rem 0 3rem;
+   }
+
+   .container{
+    width: 70%;
+    margin: auto;
+   }
+}

@@ -1,0 +1,93 @@
+.btn{
+    width: 300px;
+    border-radius: 120px;
+    padding: .5rem 2rem;
+}
+.subscribe{
+    .secContainer{
+        .textDiv{
+            h2{
+                font-size: 4vh;
+                color: black;
+            }
+            p{
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+//Media queries
+@media screen and (min-width: 480px){
+    .subscribe{
+        .secContainer{
+            img{
+                max-width: 75%;
+                margin: auto;
+            }
+
+            .textDiv{
+                h3{
+                    font-size: 1.5rem;
+                }
+                p{
+                    padding: 1rem 0;
+                    font-size: 2.5vh;
+                }
+
+                .btn{
+                    padding: .5rem 2rem;
+                    font-size: 2.5vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 640px){
+    .subscribe{
+        .secContainer{
+            grid-template-columns: repeat(2,1fr);
+            img{
+                width: 100%;
+                margin: auto;
+            }
+
+            .textDiv{
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    padding: 1rem 0;
+                    font-size: 2.5vh;
+                }
+
+                .btn{
+                    padding: .5rem 2rem;
+                    font-size: 2.5vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .subscribe{
+        .secContainer{
+            img{
+                width: 50%;
+                margin: auto;
+                border-radius: 20px;
+            }
+            .textDiv{
+                h3{
+                    font-size: 3rem;
+                }
+                p{
+                    padding: 2rem 0;
+                    font-size: 2.5vh;
+                }
+            }
+        }
+    }
+}

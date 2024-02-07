@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+.btn1{
+    width: 100%;
+    border-radius: 120px;
+}
+.accordionContainer{
+    .title{
+        font-size: 20px;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 10px;
+        justify-content: space-between;
+        background: rgb(223, 122, 122);
+
+        span{
+            cursor: pointer;
+            .icon{
+                font-size: 1.3rem;
+                color: black;
+
+            }
+        }
+    }
+    .description{
+        font-size: 19px;
+        display: flex;
+        align-items: center;
+        line-height: 20px;
+        white-space: pre-line;
+        height: 5px;
+        transition: all .1s ease-in-out;
+        opacity: 0;
+        padding: 0 1rem;
+        background: rgb(207, 192, 192);
+        border-radius: 0 0 10px 10px;
+        color: black;
+    }
+    .show{
+        height: 100px;
+        opacity: 1;
+        
+    }
+    .activeTitle{
+        background: rgb(223, 122, 122);
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.questions{
+    .secHeading{
+        h2,h3{
+            padding-bottom: 1.5rem;
+        }
+        p{
+            font-size: 15px;
+            color: black;
+            padding-bottom: 1rem;
+        }
+    }
+    .form{
+        .formContent{
+            gap: 1rem;
+            input,textarea{
+                background-color: pink;
+                width: 100%;
+                padding: 1rem;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                &::placeholder{
+                    font-size:15px ;
+                    color: black;
+
+                }
+            }
+            textarea{
+                height: 100px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.pp{
+    height: 60px;
+    width: 100%;
+    background: yellow;
+}
+
+//Media queries
+@media screen and (min-width: 640px){
+    .accordionContainer{
+        .title{
+            font-size: 2vh;
+
+            span{
+                .icon{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .description{
+            font-size: 2vh;
+        }
+        .show{
+            height: 150px;
+        }
+    }
+    .questions{
+        .secHeading{
+            h2,
+            h3{
+                font-size: 3vh;
+            }
+            p{
+                font-size: 2vh;
+            }
+        }
+        .secContainer{
+            grid-template-columns: repeat(2,1fr);
+            align-items:flex-start;
+            gap: 2rem;
+            .form{
+                .formContent{
+                    input,textarea{
+                        font-size: 2,5vh;
+                        &::placeholder{
+                            font-size: 2.5vh;
+                            color: #000;
+                        }
+                    }
+                    textarea{
+                        height: 100px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .accordionContainer{
+        .title{
+            font-size: 2.5vh;
+
+            h2{
+                .icon{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .description{
+            font-size: 2vh;
+        }
+        .show{
+            height: 100px;
+        }
+    }
+    .questions{
+        .secHeading{
+            h2,h3{
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 2.5vh;
+            }
+        }
+        .secContainer{
+            gap: 3rem;
+        }
+    }
+}
