@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap");
+.user {
+  display: flex;
+  align-items: center;
+  left: 0%;
+  margin-right: 50px;
+  margin-left: 0%;
+}
+.user .pict {
+  margin-right: 10px;
+}
+.user .pict img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user .name {
+  font-size: 14px;
+  font-weight: 800;
+  color: #a46a6a;
+}
+
 .navBar {
   display: flex;
   align-items: center;
@@ -6,11 +27,11 @@
   width: 100%;
   padding: 1.5rem 2rem;
   position: fixed;
-  border-bottom: 1.5px solid rgb(211, 211, 211);
+  border-bottom: 1.5px solid rgb(174, 164, 164);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.737);
+  background: rgba(237, 242, 241, 0.737);
 }
 .navBar .logoDiv {
   display: flex;
@@ -30,7 +51,8 @@
     right: 50%;
     left: 50%;
     transform: translate(-50%);
-    background: rgba(255, 255, 255, 0.94);
+    background: rgb(235, 160, 234);
+    background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(231, 156, 224) 1%, rgb(236, 202, 228) 100%, rgb(45, 105, 253) 100%);
     padding: 2rem;
     border-radius: 10px;
     transition: 0.4s ease-in-out;
@@ -58,6 +80,7 @@
 }
 .navBar .closeIcon {
   position: absolute;
+  font-size: 30px;
   bottom: -15px;
   right: 50%;
   left: 50%;
@@ -72,7 +95,7 @@
   outline: none;
   height: 50px;
   width: 100px;
-  background: red;
+  background: #db2f2f;
   border-radius: 10px;
   font-size: 15px;
   font-weight: 700;
@@ -113,5 +136,15 @@
 @media screen and (min-width: 1440px) {
   .navBar {
     padding: 2rem 14rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navBar {
+    padding: 1.5rem 9rem;
+  }
+  .navBar .signInBtn {
+    width: 151px;
+    border-radius: 120px;
+    padding: 0.5rem 2rem;
   }
 }/*# sourceMappingURL=Navbar.css.map */

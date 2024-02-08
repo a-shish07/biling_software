@@ -4,9 +4,9 @@
     padding: 0;
 }
 .Home{
+    width: 100%;
     position: relative;
     height: 95vh;
-    width: 100vw;
     top:0;
 
     .videoBg{
@@ -83,7 +83,7 @@
                 margin: auto;
             }
             .btn{
-                font-size: 2.5vh;
+                font-size: 2vh;
                 margin: auto;
             }
         }
@@ -126,7 +126,7 @@
 
 @media screen and (min-width: 1040px){
     .Home{
-        width: 100vw;
+        width: 100%;
         position: relative;
 
         .sectionText{

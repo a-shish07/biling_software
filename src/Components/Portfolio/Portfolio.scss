@@ -47,7 +47,7 @@ p{
                         font-size: 3vh;
                     }
                     p{
-                        font-size: 15px;
+                        font-size: 12px;
                         padding: .5rem 0;
                     }
                 }
@@ -57,8 +57,8 @@ p{
 
                         .iconDiv{
                             img{
-                                height: 60px;
-                                width: 60px;
+                                height: 80px;
+                                width: 80px;
                             }
                         }
                         .infor{
@@ -130,7 +130,7 @@ p{
                 .grid{
                     grid-template-columns: repeat(1,1fr);
                     .singlePortfolio{
-                        gap: 1.5rem;
+                        gap: 2.5rem;
                     }
                 }
             }
@@ -153,7 +153,7 @@ p{
                     font-size: 2rem;
                 }
                 p{
-                    font-size: 2vh;
+                    font-size: 1.5rem;
                 }
             }
             .grid{
