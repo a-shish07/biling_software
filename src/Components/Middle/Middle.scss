@@ -2,7 +2,6 @@
 
 .middle{
     width: 100%;
-
     .secContainer{
         .grid{
             padding: 3rem;
@@ -35,6 +34,7 @@
     .middle{
         .secContainer{
             .grid{
+                padding-top: 3rem;
                 grid-template-columns: repeat(2,1fr);
             }
         }

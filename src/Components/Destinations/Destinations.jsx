@@ -8,14 +8,14 @@ import { BiSearchAlt } from "react-icons/bi";
 import { TiLocationArrowOutline } from "react-icons/ti";
 
 //Imported Images
- import  image1  from "../../../Assests/image1.jpg";
- import  image2  from "../../../Assests/image2.jpg";
- import  image3  from "../../../Assests/image3.jpg";
- import  image4  from "../../../Assests/image4.jpg";
- import  image5  from "../../../Assests/image5.jpg";
- import  image6  from "../../../Assests/image6.jpg";
- import  image7  from "../../../Assests/image7.jpg";
- import  image8  from "../../../Assests/image7.jpg";
+ import  image1  from "../../../Assests/i1.jpeg";
+ import  image2  from "../../../Assests/image2.jpeg";
+ import  image3  from "../../../Assests/image3.jpeg";
+ import  image4  from "../../../Assests/image4.jpeg";
+ import  image5  from "../../../Assests/image5.jpeg";
+ import  image6  from "../../../Assests/image6.jpeg";
+//  import  image7  from "../../../Assests/image7.jpg";
+//  import  image8  from "../../../Assests/image7.jpg";
 import Aos from 'aos';
 
 //  Lets crreate an array that is gonna contain all destination data and we loop through 
@@ -23,43 +23,43 @@ const destinations = [
   {
     id:1,
     img:image1,
-    name:'Buri Buri Island',
-    location:'Indian Ocean',
+    name:'Toyota ',
+    location:'Family Use',
     rating:4.5,
   },
   {
     id:2,
     img:image2,
-    name:'Maldives Island',
-    location:'Indian Ocean',
-    rating:4.5,
+    name:'Mercedes',
+    location:'Personal Use',
+    rating:4.6,
   },
   {
     id:3,
     img:image3,
-    name:'Santorini Island',
-    location:'Greece',
+    name:'Thar',
+    location:'Adventure',
     rating:4.5,
   },
   {
     id:4,
     img:image4,
-    name:'Balli Island',
-    location:'Indonesia',
+    name:'TVS Ntorq',
+    location:'Solo Use',
     rating:4.5,
   },
   {
     id:5,
     img:image5,
-    name:'Hawai Island',
-    location:'Pacific Ocean',
+    name:'Bharat Truck',
+    location:'Industrial Use',
     rating:4.5,
   },
   {
     id:6,
     img:image6,
-    name:'New Guinea',
-    location:' Papua New Guinea',
+    name:'Hero Deluxe',
+    location:'Daily Use',
     rating:4.5,
   },
   // {
@@ -79,22 +79,22 @@ const Destinations = () => {
     <div className='destination section container'>
       <div className="secContainer">
         <div className="secTitle">
-          <span className="redText" data-aos="fade-up">EXPLORE NOW </span>
-          <h3 data-aos="fade-up">Find Your Dream Destination</h3>
+          <span className="redText" data-aos="fade-up">RIDE NOW </span>
+          <h3 data-aos="fade-up">Find Your Perfect Vehicle</h3>
           <p data-aos="fade-up">
-            Fill in the fields below to find the best spot for your tour.
+            Fill in the fields below to find the best Vehicle for your work.
           </p>
         </div>
 
         <div className="searchField grid">
           <div className="inputField flex" data-aos="fade-up">
           <MdLocationPin className="icon"/>
-          <input type="text" placeholder='Location'/>
+          <input type="text" placeholder='Source Location'/>
           </div>
 
           <div className="inputField flex" data-aos="fade-up">
           <BsCreditCardFill className="icon"/>
-          <input type="text" placeholder='Budget'/>
+          <input type="text" placeholder='Destinations'/>
           </div>
           
           <div className="inputField flex" data-aos="fade-up">
@@ -102,17 +102,17 @@ const Destinations = () => {
           <input type="text" placeholder='Date'/>
           </div>
               <button className='btn flex' data-aos="fade-up"><BiSearchAlt className="icon"/>
-              Search</button>
+              Pre-Booking</button>
         </div>
 
         <div className="secMenu">
           <ul className="flex" data-aos="fade-up">
             <li className="active">All</li>
             <li>Recommended</li>
-            <li>Beach</li>
-            <li>Park</li>
-            <li>Nature</li>
-            <li>Mountain</li>
+            <li>Bike</li>
+            <li>Car</li>
+            <li>Truck</li>
+            <li>Scooty</li>
           </ul>
         </div>
         <div className="destinationContainer grid">

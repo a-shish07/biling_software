@@ -12,27 +12,27 @@ const Middle = () => {
       <div className="secContainer container">
         <div className="grid">
           <span className="flex"  data-aos="fade-up">
-            <h2>10</h2>
+            <h2>20+</h2>
             <p>
-              World Of Experiences
+            <strong>Vehicles</strong>
             </p>
           </span>
           <span className="flex"  data-aos="fade-up">
             <h2>2K+</h2>
             <p>
-              Fine Destinations
+            <strong>Daily Users</strong>
             </p>
           </span>
           <span className="flex"  data-aos="fade-up">
             <h2>10K+</h2>
             <p>
-              Customer Reviews
+            <strong>Customer Reviews</strong>
             </p>
           </span>
           <span className="flex"  data-aos="fade-up">
             <h2>4.8</h2>
             <p>
-              Overall Rating
+            <strong>Overall Rating</strong>
             </p>
           </span>
         </div>

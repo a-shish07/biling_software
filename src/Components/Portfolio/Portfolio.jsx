@@ -19,7 +19,7 @@ const Portfolio = () => {
             <div className="secHeading" data-aos="fade-up">
               <h1 data-aos="fade-up">Why Should You Choose Us</h1>
               <p data-aos="fade-up">
-                We have extensive knowledge and experience in the travel industry.
+                We have the best and well maintained Vehicles at best prices.
               </p>
             </div>
             <div className="grid">
@@ -29,7 +29,7 @@ const Portfolio = () => {
                 </div>
                 <div className="infor">
                   <h2 data-aos="fade-up">Safety and Support</h2>
-                  <p data-aos="fade-up">Our top priority is the safety and well being of our clients.We maintain high safety standards and have emergency support available during the trip.</p>
+                  <p data-aos="fade-up">Our top priority is the safety and well being of our clients.We maintain high safety standards and have emergency support available for every vehicles.</p>
                 </div>
               </div>
               <div className="singlePortfolio flex">
@@ -38,7 +38,7 @@ const Portfolio = () => {
                 </div>
                 <div className="infor">
                   <h2 data-aos="fade-up">Diverse Range of Destinations</h2>
-                  <p data-aos="fade-up">We provide a diverse range of destination all over the world with the best facilities that will make your trip memorable and comfortable.We take care of all the things that are needed for your trip to make it unforgetable and special.</p>
+                  <p data-aos="fade-up">We provide a diverse range of vehicles from  all over the world with the best facilities that will make your trip memorable and comfortable.We take care of all the things that are needed for your use to make it unforgetable and special.</p>
                 </div>
               </div>
               <div className="singlePortfolio flex">

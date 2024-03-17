@@ -2,11 +2,12 @@ import React, { useEffect } from 'react'
 import './Home.css'
 
 // Imported Assest
-import Video from '../../../Assests/186845.mp4'
-import image1  from '../../../Assests/image1.jpg'
-import image2 from '../../../Assests/image2.jpg'
-import image3 from '../../../Assests/image3.jpg'
-import image4  from '../../../Assests/image4.jpg'
+import image1  from '../../../Assests/i1.jpeg'
+import image2 from '../../../Assests/image2.jpeg'
+import image3 from '../../../Assests/image3.jpeg'
+import image4  from '../../../Assests/image4.jpeg'
+import image5  from '../../../Assests/immg.jpg'
+// import image1 from '../../../Assests/i1.jpg'
 
 // Imported Icons
 import { AiOutlineSwapRight } from 'react-icons/ai';
@@ -20,7 +21,8 @@ const Home = () => {
   return (
     <div className="Home">
       <div className="videoBg">
-        <video src={Video} autoPlay loop muted></video>
+        {/* <video src={Video} autoPlay loop muted></video> */}
+        <img src={image5} alt="Destination Images"  className='i'/>
       </div>
 
       <div className="sectionText">

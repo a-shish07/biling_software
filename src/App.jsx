@@ -1,3 +1,5 @@
+import React from 'react'; 
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'; 
 import './App.css'
 import Destinations from './Components/Destinations/Destinations'
 import Footer from './Components/Footer/Footer'
@@ -8,21 +10,56 @@ import Portfolio from './Components/Portfolio/Portfolio'
 import Questions from './Components/Questions/Questions'
 import Review from './Components/Review/Review'
 import Subscribe from './Components/Subscribe/Subscribe'
-function App() {
+const App = () => { 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home/>
+    },
+    {
+      path: "/Middle",
+      element: <Middle/>
+    },
 
-  return (
-   <div>
+    {
+      path: "/Destinations",
+      element: <Destinations/>
+    },
+    {
+      path: "/Review",
+      element: <Review/>
+    },
+    {
+      path: "/Portfolio",
+      element: <Portfolio/>
+    },
+    {
+      path: "/Middle",
+      element: <Middle/>
+    },
+    {
+      path: "/Footer",
+      element: <Footer/>
+    },
+    
+  ])
+
+  return ( 
+    <>
       <Navbar/>
+      <RouterProvider router = {router}/>
+      {/* <Middle/> */}
       <Home/>
       <Middle/>
       <Destinations/>
       <Portfolio/>
       <Review/>
-      <Questions/>
-      <Subscribe/>
+      {/* <Questions/> */}
+      {/* <Subscribe/> */}
       <Footer/>
-   </div>
-  )
-}
+
+    </> 
+  ); 
+};
 
 export default App
