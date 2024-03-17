@@ -44,6 +44,14 @@ const Navbar = () => {
         <ul>
             <li> 
                <a href="/"><li className='signInBtn btn admin'>Admin</li></a>
+              <button className="signInBtn btn"  onClick={() => logout({ logoutParams: { returnTo: window.location.origin}} )}>
+          Log Out
+        </button>
+        </li>
+          )
+           : ( 
+            <li> 
+              <button className="signInBtn btn"  onClick={() => loginWithRedirect()}>Log In</button>
             </li>
         </ul>
         {/* Icon to toggle Navbar */}
